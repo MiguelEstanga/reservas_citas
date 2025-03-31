@@ -1,5 +1,9 @@
-@import 'tailwindcss';
+@import 'bootstrap';
 
+@import './base/variable.css';
+@import './nav/nav.css';
+@import './calendar/calendar.css';
+@import './util/util.css';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';

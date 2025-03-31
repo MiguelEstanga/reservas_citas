@@ -1,0 +1,54 @@
+
+.event-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  display: inline-block;
+}
+.event-green {
+  background-color: #16a34a; /* Tailwind green-600 */
+}
+.event-red {
+  background-color: #dc2626; /* Tailwind red-600 */
+}
+.event-blue {
+  background-color: #2563eb; /* Tailwind blue-600 */
+}
+.completed {
+  background-color: #f0fdf4; /* bg-green-50 */
+  color: #15803d; /* text-green-700 */
+  border-left: 4px solid #16a34a;
+}
+.not-completed {
+  background-color: #fefce8; /* bg-yellow-100 */
+  color: #78350f;  /* text-yellow-800 */
+  border-left: 4px solid #fcd34d;
+}
+.calendar-header {
+  background-color: #e0f2fe; /* Tailwind blue-100 */
+}
+.event-card {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.completed-icon {
+  width: 16px;
+  height: 16px;
+  color: #16a34a; /* Tailwind green-600 */
+  margin-right: 0.5rem;
+}
+.not-completed-icon {
+  width: 16px;
+  height: 16px;
+  color: #dc2626; /* Tailwind red-600 */
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid #dc2626;
+  padding: 2px;
+}

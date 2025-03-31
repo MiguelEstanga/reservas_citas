@@ -1,0 +1,97 @@
+nav {
+  background: var(--color_menu);
+  width: 100%; /* Usa 100% en lugar de 100vw */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  align-items: center;
+  justify-content: flex-start; /* Alinea a la izquierda por defecto */
+  gap: 1rem;
+  padding: 0 1rem; /* Añade padding para separación */
+}
+
+.user_menu {
+  color: var(--color_texto_primario);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: auto; /* Empuja los elementos de la derecha hacia la derecha */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+nav ul li {
+  height: var(--altura-menu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: var(--color_texto_primario);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0 1rem; /* Añade padding para separación */
+  border-right: solid 1px var(--color_texto_primario); /* Rayita a la derecha */
+  display: flex;
+  align-items: center;
+ 
+}
+
+/* Elimina la rayita del último elemento */
+nav ul li:last-child a {
+  border-right: solid 1px ;
+}
+
+.avatar {
+  border: solid 1px red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    height: auto; /* Altura automática */
+  }
+
+  .user_menu {
+    width: 100%; /* Ocupa todo el ancho */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    margin-right: 0;
+  }
+
+  nav ul {
+    width: 100%; /* Ocupa todo el ancho */
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  nav ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    height: auto; /* Altura automática */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  nav ul li a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-right: none; /* Quita las rayas en pantallas pequeñas */
+    border-bottom: solid 1px var(--color_texto_primario); /* Agrega rayas abajo */
+  }
+
+  nav ul li:last-child a {
+    border-bottom: none; /* Quita la última raya abajo */
+  }
+}

@@ -1,0 +1,31 @@
+:root {
+  /* slidebar theme */
+  --color_menu: #021F54;       /* color principal para el menu y algunos baner */
+  --color_accion: #B70F0A;     /* color de las acciones calendarios botones etc */
+  --color_alerta_calendario: #FEC63D;    /*  este color sera usadao para algunas graficas y baner como calendarios etc*/
+  --color_fondo: #E9E9E9 ;   /* color del fondo de la app */
+  /* Colores Principales */
+  --color_baner_segundario: #000000;       /* color de algunos baner de informacion */
+  --color_texto_primario: #fff; /* color de los texto  */
+  --color-secondary: #f0f0f1;    /* Gris claro */
+  --color-text: #1d2327;         /* Texto principal */
+  --color-border: #dcdcde;       /* Bordes */
+  --color-success: #00a32a;      /* Verde */
+  --color-error: #d63638;        /* Rojo */
+
+  /* Tipografía */
+  --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+
+  /* Espaciado */
+  --space-unit: 1rem;
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-md: calc(1.4 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --option-padding: 5px;
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --altura-menu : 70px;
+  --anchura-menu-items : 40px;
+}
